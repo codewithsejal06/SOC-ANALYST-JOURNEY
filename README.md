@@ -1,4 +1,4 @@
-SOC Analyst Roadmap 🚀
+### SOC Analyst Roadmap 🚀
 
 Welcome to my SOC (Security Operations Center) Analyst Journey repository.
 
