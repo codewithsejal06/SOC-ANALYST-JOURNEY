@@ -1,14 +1,14 @@
-Q1. What does SOC stand for?
+## Q1. What does SOC stand for?
 Ans : SOC stand for Security Operations Center.
 
-Q2. What are the three pillars of the CIA Triad?
+## Q2. What are the three pillars of the CIA Triad?
 Ans : Confidentiality, Integrity and Availability are the three pillars of the CIA Traid. 
 
-Q3. What is the difference between an Alert and an Incident?
-Ans : Alert detect risk and suspicious, Incident is security issue when alert is confirmed.
+## Q3. What is the difference between an Alert and an Incident?
+Ans : Alert is a signal that an activity or series of activities may indicate a threat or performance issue, detect risk and suspicious, Incident is security issue when alert is confirmed.
 
-Q4. Name three SOC tools.
+## Q4. Name three SOC tools.
 Ans : Wireshark, Nmap, VirusTotal.
 
-Q5. Which SOC level usually performs initial monitoring?
+## Q5. Which SOC level usually performs initial monitoring?
 Ans : Level 1 Analyst performs initial monitoring
