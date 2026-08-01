@@ -179,10 +179,10 @@ Every investigation follows a process:
 # Part 8: Common SOC Tools
 
 ## | Tool | Purpose |
-
+|---|---|
 | Splunk | SIEM for collecting and searching logs |
 | Microsoft Sentinel | Cloud SIEM and SOAR |
-| Wazuh	| Open-source SIEM/XDR |
+| Wazuh | Open-source SIEM/XDR |
 | Wireshark | Network packet analysis |
 | Sysmon | Detailed Windows event logging |
 | VirusTotal | File and URL reputation checks |
