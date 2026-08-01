@@ -161,24 +161,36 @@ Not every alert becomes an incident.
 Every investigation follows a process:
 
 **Event**
+   
 ↓
+
 **Alert**
+
 ↓
+
 **Investigation**
+
 ↓
+
 **Incident (if confirmed)**
+
 ↓
+
 **Response**
+
 ↓
+
 **Recovery**
+
 ↓
+
 **Lessons Learned**
 
 ---
 
 # Part 8: Common SOC Tools
 
-## | Tool | Purpose |
+| Tool | Purpose |
 |---|---|
 | Splunk | SIEM for collecting and searching logs |
 | Microsoft Sentinel | Cloud SIEM and SOAR |
