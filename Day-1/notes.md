@@ -32,7 +32,7 @@ Critical services can fail.
 
 That's why cybersecurity is essential.
 
-************************
+---
 
 # Part 2: Goals of Cybersecurity (CIA Triad)
 
@@ -62,7 +62,7 @@ Threat Example : A DDoS attack makes the website unavailable.
 📌 Remember
 CIA = Confidentiality + Integrity + Availability
 
-************************
+---
 
 # Part 3: What is a SOC?
 
@@ -79,7 +79,7 @@ Responds to attacks
 Documents findings
 Improves security over time
 
-************************
+---
 
 # Part 4: Who is a SOC Analyst?
 
@@ -107,7 +107,7 @@ Look for similar activity.
 Decide whether it's a brute-force attack.
 Escalate or close the alert.
 
-************************
+---
 
 # Part 5: SOC Team Structure
 
@@ -127,7 +127,7 @@ Malware analysis
 Detection engineering
 Mentors junior analysts
 
-************************
+---
 
 # Part 6: Event vs Alert vs Incident
 
@@ -154,37 +154,37 @@ Ransomware attack
 
 Not every alert becomes an incident.
 
-************************
+---
 
 # Part 7: SOC Workflow
 
 Every investigation follows a process:
 
-Event
-   ↓
-Alert
-   ↓
-Investigation
-   ↓
-Incident (if confirmed)
-   ↓
-Response
-   ↓
-Recovery
-   ↓
-Lessons Learned
+**Event**
+↓
+**Alert**
+↓
+**Investigation**
+↓
+**Incident (if confirmed)**
+↓
+**Response**
+↓
+**Recovery**
+↓
+**Lessons Learned**
 
-************************
+---
 
 # Part 8: Common SOC Tools
 
-## Tool	                                   Purpose
+## | Tool | Purpose |
 
-Splunk	                                   SIEM for collecting and searching logs
-Microsoft Sentinel	                       Cloud SIEM and SOAR
-Wazuh	                                   Open-source SIEM/XDR
-Wireshark	                               Network packet analysis
-Sysmon	                                   Detailed Windows event logging
-VirusTotal	                               File and URL reputation checks
-Nmap	                                   Network scanning
-Zeek	                                   Network security monitoring
+| Splunk | SIEM for collecting and searching logs |
+| Microsoft Sentinel | Cloud SIEM and SOAR |
+| Wazuh	| Open-source SIEM/XDR |
+| Wireshark | Network packet analysis |
+| Sysmon | Detailed Windows event logging |
+| VirusTotal | File and URL reputation checks |
+| Nmap | Network scanning |
+| Zeek | Network security monitoring |
