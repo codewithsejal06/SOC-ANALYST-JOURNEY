@@ -13,16 +13,18 @@ This repository documents my step-by-step learning path toward becoming a profes
 - Progress reflections and milestones
 
 ## Skills I Am Developing
-- Networking
-- Linux
-- Windows
-- SIEM tools
-- Splunk
-- Wazuh
-- Wireshark
-- Threat hunting
-- Incident response
-- Python automation
+
+Networking
+Linux
+Windows
+SIEM tools
+Splunk
+Wazuh
+Wireshark
+Threat hunting
+Incident response
+Python automation
+
 
 ## Progress
 - ✅ Day 1 - Introduction to Cybersecurity and the SOC
@@ -31,6 +33,7 @@ This repository documents my step-by-step learning path toward becoming a profes
 - ☐ Day 4
 
 ## Purpose
+
 This repository serves as my digital notebook, portfolio, and progress tracker as I continue learning and growing in the field of cybersecurity.
 
 This repository will be updated regularly as I continue my SOC Analyst learning journey, complete labs, build projects, and earn certifications.
