@@ -127,3 +127,68 @@ Source IP: <public address>
 it may represent a system communicating across the Internet.
 
 Important: An IP address alone does not automatically prove that an activity is malicious.
+
+---
+
+# 5. IPv4 vs IPv6
+
+You'll encounter two major versions of IP.
+
+## IPv4
+
+Example:
+
+192.168.1.10
+
+IPv4 uses 32-bit addresses.
+
+## IPv6
+
+Example:
+
+2001:db8::1
+
+IPv6 uses 128-bit addresses.
+
+IPv6 provides a vastly larger address space.
+
+We'll study IPv6 more deeply later.
+
+---
+
+# 6. MAC Address
+
+A MAC (Media Access Control) address is a link-layer identifier associated with a network interface.
+
+Example:
+
+00:1A:2B:3C:4D:5E
+
+## IP vs MAC
+Think of it like this:
+
+- IP → network-level addressing
+
+- MAC → local network/link-level addressing
+
+Don't memorize the oversimplified idea that "IP is the address and MAC is the identity." In real networking, the details are more nuanced.
+
+---
+
+# 7. What is a Router?
+
+A router connects different networks and forwards packets between them.
+
+Example:
+
+Your Laptop
+     ↓
+Home Router
+     ↓
+ISP Network
+     ↓
+Internet
+     ↓
+Web Server
+
+Your home router commonly acts as the gateway between your local network and the Internet.
