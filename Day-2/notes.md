@@ -4,19 +4,19 @@ A computer network is a group of connected devices that communicate and share re
 
 For example:
 
-Laptop ─────┐
-Phone  ─────┼──→ Router ──→ Internet
-TV     ─────┘
+- Laptop ─────┐
+- Phone  ─────┼──→ Router ──→ Internet
+- TV     ─────┘
 
 Devices can communicate using agreed rules called protocols.
 
 ## Examples:
 
-HTTP/HTTPS → Web communication
-DNS → Domain-name resolution
-SSH → Secure remote access
-TCP/UDP → Transport communication
-Why does this matter in SOC?
+- HTTP/HTTPS → Web communication
+- DNS → Domain-name resolution
+- SSH → Secure remote access
+- TCP/UDP → Transport communication
+- Why does this matter in SOC?
 
  Suppose your SIEM shows:
 
@@ -25,8 +25,11 @@ Why does this matter in SOC?
 ## You need to understand:
 
 192.168.1.15 → source IP
+
 10.10.20.5 → destination IP
+
 22 → destination port
+
 SSH → likely service
 
 Without networking knowledge, the alert doesn't mean much.
@@ -41,10 +44,12 @@ A network covering a small area.
 Example:
 
 Your Home
- ├── Laptop
- ├── Phone
- ├── Smart TV
- └── Router
+- Laptop
+- Phone
+- Smart TV
+- Router
+
+
 WAN — Wide Area Network
 
 Connects networks over large geographical areas.
@@ -61,15 +66,15 @@ A server provides that service.
 
 ## Example:
 
-Your Browser
-     │
-     │ Request
-     ↓
-Web Server
-     │
-     │ Response
-     ↓
-Your Browser
+**Your Browser**
+
+↓ Request
+
+**Web Server**
+
+↓ Response
+
+**Your Browser**
 
 When you open a website, your browser acts as a client and communicates with a web server.
 
@@ -152,8 +157,6 @@ IPv6 uses 128-bit addresses.
 
 IPv6 provides a vastly larger address space.
 
-We'll study IPv6 more deeply later.
-
 ---
 
 # 6. MAC Address
@@ -183,19 +186,19 @@ Example:
 
 Your Laptop
 
-     ↓
+↓
 
 Home Router
 
-     ↓
+↓
 
 ISP Network
 
-     ↓
+↓
 
 Internet
 
-     ↓
+↓
 
 Web Server
 
