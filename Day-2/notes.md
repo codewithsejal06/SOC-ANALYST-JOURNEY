@@ -182,13 +182,21 @@ A router connects different networks and forwards packets between them.
 Example:
 
 Your Laptop
+
      ↓
+
 Home Router
+
      ↓
+
 ISP Network
+
      ↓
+
 Internet
+
      ↓
+
 Web Server
 
 Your home router commonly acts as the gateway between your local network and the Internet.
