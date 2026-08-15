@@ -203,3 +203,224 @@ Internet
 Web Server
 
 Your home router commonly acts as the gateway between your local network and the Internet.
+
+---
+
+# 8. What is a Switch?
+
+A network switch connects devices within a LAN.
+
+Example:
+
+PC ─────┐
+
+Laptop ─┼──→   Switch
+
+Server ─┘
+
+A switch primarily operates using MAC addresses at the data-link layer.
+
+A router primarily forwards traffic between different IP networks.
+
+---
+
+# 9. DNS — Domain Name System
+
+This is extremely important for SOC analysts.
+
+Humans prefer:
+
+google.com
+
+Computers communicate using IP addresses.
+
+DNS helps resolve a domain name to an IP address.
+
+## Conceptually:
+
+You type:
+
+example.com
+
+↓
+
+DNS Query
+
+↓
+
+DNS Response
+
+↓
+
+IP Address
+
+## SOC Example
+
+Suppose a workstation suddenly makes hundreds of DNS queries to strange domains.
+
+A SOC analyst might investigate:
+
+- Which machine generated them?
+- Which user was logged in?
+- What domains were requested?
+- Are the domains suspicious?
+- Did the machine make other unusual connections?
+
+DNS logs can therefore be valuable evidence.
+
+---
+
+# 10. Ports
+
+An IP identifies the destination host, while a port number helps identify the application/service endpoint.
+
+Ports range from:
+
+0 – 65535
+
+## Some common ports:
+
+| Port | Common Protocol/Service |
+|---|---|
+| 21 | FTP |
+| 22 | SSH |
+| 23	| Telnet |
+| 25 | SMTP |
+| 53 | DNS |
+| 80 | HTTP |
+| 110 | POP3 |
+| 143 | IMAP |
+| 3389 | RDP |
+| 443 |	HTTPS |
+
+## Example
+10.0.0.5:443
+
+Means traffic is going to:
+
+IP:   10.0.0.5
+Port: 443
+
+Port 443 is commonly associated with HTTPS.
+
+---
+
+# TCP vs UDP
+
+This is another must-know SOC concept.
+
+# 11. TCP
+
+TCP is connection-oriented and provides mechanisms for reliable, ordered delivery.
+
+It's commonly used when reliable communication matters.
+
+Examples include:
+
+- HTTPS
+- SSH
+- SMTP
+
+## TCP 3-Way Handshake
+
+## You may see:
+
+|   Client   |    Server    |
+|-------|-------|
+   SYN  ────────────────→
+
+ ←───────────── SYN-ACK
+
+ACK  ────────────────→
+
+
+  Connection established
+
+## Remember:
+
+SYN → SYN-ACK → ACK
+
+We'll analyse this in Wireshark later.
+
+# 12. UDP
+
+UDP is connectionless and has lower protocol overhead than TCP.
+
+It doesn't provide TCP-style connection establishment or guaranteed delivery.
+
+Common examples include:
+
+- DNS
+- DHCP
+- Some streaming/real-time applications
+
+For a SOC analyst, understanding TCP vs UDP helps you interpret network traffic.
+
+---
+
+# 13. HTTP vs HTTPS
+## HTTP
+
+Usually:
+
+- Port 80
+
+HTTP traffic isn't protected by TLS.
+
+## HTTPS
+
+Usually:
+
+- Port 443
+
+HTTPS uses TLS to provide encryption and authentication for the connection.
+
+So:
+
+HTTP  → generally unencrypted application traffic
+
+HTTPS → HTTP protected by TLS
+
+Important: Port 443 itself doesn't magically make traffic secure. HTTPS/TLS is what provides the security properties.
+
+---
+
+# 14. What Happens When You Open a Website?
+
+Suppose you enter:
+
+https://example.com
+
+A simplified flow is:
+
+1. Browser
+
+   ↓
+
+2. DNS resolution
+
+   ↓
+
+3. Server IP obtained
+
+   ↓ 
+
+4. Network connection established
+
+    ↓
+
+5. TLS negotiation for HTTPS
+     
+    ↓
+
+6. HTTP request
+     
+    ↓
+
+7. Web server responds
+     
+    ↓
+
+8. Browser displays the page
+
+A real browser may use caching, connection reuse, HTTP/2 or HTTP/3, and other mechanisms, but this simplified model is perfect for your current level.
