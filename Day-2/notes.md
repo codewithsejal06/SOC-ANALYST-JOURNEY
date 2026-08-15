@@ -327,11 +327,9 @@ Examples include:
 
 |   Client   |    Server    |
 |-------|-------|
-   SYN  ────────────────→
-
- ←───────────── SYN-ACK
-
-ACK  ────────────────→
+| SYN  ────────────────→ |  |
+|  | ←───────────── SYN-ACK |
+| ACK  ────────────────→ | |
 
 
   Connection established
